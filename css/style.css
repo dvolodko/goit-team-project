@@ -66,7 +66,7 @@ address {
 }
 
 .header-logo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 25px;
   line-height: 1.5;
@@ -230,7 +230,7 @@ address {
 }
 
 .modal-subtitle::before {
-  content: '';
+  content: "";
   width: 143px;
   height: 2px;
   background-color: #d8d8d8;
@@ -257,11 +257,65 @@ address {
 }
 .form {
 }
+
 .form-label {
+  display: block;
+  margin-bottom: 23px;
 }
+
 .form-input {
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms ease-in-out;
+  padding-left: 21px;
+}
+
+.form-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  color: #000;
+}
+
+.form-input:focus {
+  border-color: #022c40;
 }
 .form-textarea {
+  width: 100%;
+  height: 149px;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: transparent;
+  padding: 22px;
+  transition: border-color 250ms ease-in-out;
+  resize: none;
 }
+
+.form-textarea:focus {
+  border-color: #022c40;
+}
+
 .form-submit-button {
+  min-width: 181px;
+  height: 48px;
+  background-color: #022c40;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
